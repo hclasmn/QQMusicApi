@@ -3,6 +3,7 @@ From node:lts-alpine3.11
 RUN  apk add --no-cache git bash
 RUN git clone https://github.com/jsososo/QQMusicApi.git /QQMusicApi
 RUN cd /QQMusicApi
+RUN npm cache clean --force
 RUN npm install
 RUN apk del git
 RUN touch /start.sh
