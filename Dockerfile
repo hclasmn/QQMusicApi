@@ -5,6 +5,5 @@ RUN git clone https://github.com/jsososo/QQMusicApi.git /QQMusicApi
 RUN cd /QQMusicApi
 RUN npm install
 RUN apk del git
-WORKDIR /QQMusicApi
 EXPOSE 3300
-CMD ["npm start"]
+ENTRYPOINT ["cd /QQMusicApi && npm install"]
