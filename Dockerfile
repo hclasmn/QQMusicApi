@@ -5,5 +5,6 @@ RUN git clone https://github.com/Binaryify/NeteaseCloudMusicApi.git /QQMusicApi
 RUN cd /QQMusicApi
 RUN npm install
 RUN apk del git
+WORKDIR /QQMusicApi
 EXPOSE 3300
 ENTRYPOINT ["npm start"]
