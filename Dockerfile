@@ -7,4 +7,4 @@ RUN npm install
 RUN apk del git
 WORKDIR /QQMusicApi
 EXPOSE 3300
-ENTRYPOINT ["npm start"]
+CMD ["npm start"]
